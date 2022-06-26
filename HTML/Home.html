@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Toolboot-Home</title>
+	<link rel="icon" type="image" href="E:\Web Development\Projects\New folder\Images\Logo.png">
+	<link rel="stylesheet" type="text/css" href="E:\Web Development\Projects\New folder\CSS\Toolboot.css"> 
+</head>
+<body>
+	<nav class="NavBar1">
+		<ul class="NavigationBarTop">
+			<li class="active">
+				<a href="Home.html">Home</a>
+			</li>
+			<li>
+				<a href="Info.html">Info</a>
+			</li>
+			<li>
+				<a href="Solutions.html">Solutions</a>
+			</li>
+			<li>
+				<a href="Subscriptions.html">Subscriptions</a>
+			</li>
+			<li>
+				<a href="About_Us.html">About Us</a>
+			</li>
+			<li class="Title">
+			    <a href="" class="Heading">TOOLBOOT</a>
+		    </li>
+		</ul>
+<div class="slideshow-container">
+
+ <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="E:\Web Development\Projects\New folder\Images\pic2.jpg">
+  <div class="centered">TOOLBOOT</div>
+  <div class="Subheading">Your Laptop Guide</div>
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="E:\Web Development\Projects\New folder\Images\pic1.jpg">
+  <div class="centered">TOOLBOOT</div>
+  <div class="Subheading">Your Laptop Guide</div>
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="E:\Web Development\Projects\New folder\Images\pic3.jpg">
+  <div class="centered">TOOLBOOT</div>
+  <div class="Subheading">Your Laptop Guide</div>
+ </div>
+
+ <br>
+
+ <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ </div>
+</div>
+
+<div class="content">
+ <div class="Section1">
+	<span>We Here At Toolboot...</span>
+	<div class="Description1">
+		<p>
+		Solve your problems: What to buy, When to buy & Why to buy? So that you dont have to worry because we're there for you.
+	    </p>
+	</div>
+ </div>
+ <img class="Section1" src="E:\Web Development\Projects\New folder\Images\Logo.png">
+</div>
+<br>
+<div class="content">
+  <div class="Section2">
+ 	<span>What we actually do?</span>
+ 	<br>
+    <div class="Description2">
+ 		<img src="E:\Web Development\Projects\New folder\Images\Desc2(1).png">
+ 		<p>
+ 			Any doubts? <!-- <br> -->No worries! We'll clear them up.<!--<br>--> We'll provide you best solutions to our users so that they can find their best fit.
+ 		</p>
+    </div>
+    <div class="Description2">
+ 		<img src="E:\Web Development\Projects\New folder\Images\Desc2(2).png">
+ 		<p>
+ 			Tell us what you require, what best suits you, which software makes you feel comfortable and what you may need in future!
+ 		</p>
+    </div>
+    <div class="Description2">
+ 		<img src="E:\Web Development\Projects\New folder\Images\Desc2(3).png">
+ 		<p>
+ 			Know what's trending, what's hot right now. We make sure that you don't miss anything, because we provide you with the latest computer technology. 
+ 		</p>
+    </div>
+ </div>
+</div>
+
+<div class="content">
+	<div class="Section3">
+		<span>Products you can consult us for:</span>
+		<br>
+		<div class="gallery">
+		 <a href="E:\Web Development\Projects\New folder\Images\1.jpg">
+		 	<img src="E:\Web Development\Projects\New folder\Images\1.jpg" alt="">
+		 </a>
+		 <div class="desc">Laptops</div>
+	    </div>
+
+	    <div class="gallery">
+		 <a href="E:\Web Development\Projects\New folder\Images\2.jpg">
+			<img src="E:\Web Development\Projects\New folder\Images\2.jpg" alt="">
+		 </a>
+		 <div class="desc">Cache's</div>
+	    </div>
+
+	    <div class="gallery">
+		 <a href="E:\Web Development\Projects\New folder\Images\3.jpg">
+			<img src="E:\Web Development\Projects\New folder\Images\3.jpg" alt="">
+		 </a>
+		 <div class="desc">Processors</div>
+	    </div>
+	</div>
+</div>
+<div class="footer">
+	<img src="E:\Web Development\Projects\New folder\Images\Logo.png">
+	<h1>TOOLBOOT</h1>
+	<h2>&copy Copyrights Reserved.</h2>
+</div>
+
+<!-- JavaScript Code -->
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() 
+{
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+
+</body>
+</html>
